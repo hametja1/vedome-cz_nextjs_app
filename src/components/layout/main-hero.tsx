@@ -8,8 +8,8 @@ import Image from 'next/image';
 export default function MainHero() {
   return (
     <section
-      className="relative h-200 w-full bg-cover bg-center"
-      style={{ backgroundImage: 'url("/images/Header.jpg")' }}
+      className="relative h-200 w-full bg-cover bg-center shadow-lg/30"
+      style={{ backgroundImage: 'url("/images/yellow_grass.jpg")' }}
     >
       <div className="bg-accent/50 absolute inset-0" />
       <div className="relative z-10 flex h-full flex-col justify-between px-[10%] pt-40 pb-10 text-white sm:pt-60 md:px-[15%]">

@@ -2,7 +2,8 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { fontVariables } from '@/lib/font';
 import { cn } from '@/lib/utils';
-import { HeaderNav } from '@/components/defaultLayout/header-nav';
+import { HeaderNav } from '@/components/layout/header-nav';
+import { Footer } from '@/components/layout/footer';
 
 export const metadata: Metadata = {
   title: {
@@ -20,9 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={cn(fontVariables, 'font-sans antialiased')}>
+      <body className={cn(fontVariables, 'flex min-h-screen flex-col font-sans antialiased')}>
         <HeaderNav />
-        {children}
+        <main className="flex-grow">{children}</main>
+        <Footer />
       </body>
     </html>
   );
