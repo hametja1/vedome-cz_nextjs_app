@@ -6,43 +6,43 @@ import {
   Inter,
   Mulish,
   Noto_Sans_Mono,
-} from "next/font/google";
+} from 'next/font/google';
 
-import { cn } from "@/lib/utils";
+import { cn } from '@/lib/utils';
 
-const fontFranRuth = Frank_Ruhl_Libre({
-  subsets: ["latin"],
-  variable: "--font-frank-ruhl-libre",
+export const fontFranRuth = Frank_Ruhl_Libre({
+  subsets: ['latin'],
+  variable: '--font-frank-ruhl-libre',
 });
 
 const fontSans = Geist({
-  subsets: ["latin"],
-  variable: "--font-sans",
+  subsets: ['latin'],
+  variable: '--font-sans',
 });
 
 const fontMono = Geist_Mono({
-  subsets: ["latin"],
-  variable: "--font-mono",
+  subsets: ['latin'],
+  variable: '--font-mono',
 });
 
 const fontInstrument = Instrument_Sans({
-  subsets: ["latin"],
-  variable: "--font-instrument",
+  subsets: ['latin'],
+  variable: '--font-instrument',
 });
 
 const fontNotoMono = Noto_Sans_Mono({
-  subsets: ["latin"],
-  variable: "--font-noto-mono",
+  subsets: ['latin'],
+  variable: '--font-noto-mono',
 });
 
 const fontMullish = Mulish({
-  subsets: ["latin"],
-  variable: "--font-mullish",
+  subsets: ['latin'],
+  variable: '--font-mullish',
 });
 
 const fontInter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
+  subsets: ['latin'],
+  variable: '--font-inter',
 });
 
 export const fontVariables = cn(

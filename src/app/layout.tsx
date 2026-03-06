@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { fontVariables } from '@/lib/font';
-import { cn } from '@/lib/utils';
 import { HeaderNav } from '@/components/layout/header-nav';
 import { Footer } from '@/components/layout/footer';
 
@@ -20,8 +19,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={cn(fontVariables, 'flex min-h-screen flex-col font-sans antialiased')}>
+    <html lang="en" suppressHydrationWarning className={fontVariables}>
+      <body className="flex min-h-screen flex-col antialiased">
         <HeaderNav />
         <main className="flex-grow">{children}</main>
         <Footer />

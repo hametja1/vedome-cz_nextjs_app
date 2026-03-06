@@ -1,5 +1,5 @@
-@import "tailwindcss";
-@import "tw-animate-css";
+@import 'tailwindcss';
+@import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
 
@@ -7,9 +7,7 @@
   --color-background: var(--background);
   --color-background-secondary: var(--bg-secondary);
   --color-foreground: var(--foreground);
-  --font-frank-ruhl-libre: var(--font-frank-ruhl-libre);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-frank-ruhl-libre: var();
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -56,7 +54,7 @@
   --primary: #6b705c;
   --primary-foreground: #ffffff;
   --secondary: #c58c6d;
-  --secondary-foreground: #D1D6C4;
+  --secondary-foreground: #d1d6c4;
   --muted: #f7fafc;
   --muted-foreground: #4a5568;
   --accent: #956165;
