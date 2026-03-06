@@ -1,4 +1,5 @@
 import {
+  Frank_Ruhl_Libre,
   Geist,
   Geist_Mono,
   Instrument_Sans,
@@ -8,6 +9,11 @@ import {
 } from "next/font/google";
 
 import { cn } from "@/lib/utils";
+
+const fontFranRuth = Frank_Ruhl_Libre({
+  subsets: ["latin"],
+  variable: "--font-frank-ruhl-libre",
+});
 
 const fontSans = Geist({
   subsets: ["latin"],
@@ -40,6 +46,7 @@ const fontInter = Inter({
 });
 
 export const fontVariables = cn(
+  fontFranRuth.variable,
   fontSans.variable,
   fontMono.variable,
   fontInstrument.variable,

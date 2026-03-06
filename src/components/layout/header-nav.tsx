@@ -23,7 +23,7 @@ export function HeaderNav() {
 
   const navItems = [
     { title: 'Úvod', href: '/' },
-    { title: 'Medailonky', href: '/medailonky' },
+    { title: 'O nás', href: '/medailonky' },
     { title: 'Služby', href: '/sluzby' },
     { title: 'Ceník', href: '/cenik' },
     { title: 'Kontakty', href: '/kontakty' },

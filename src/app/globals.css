@@ -7,6 +7,7 @@
   --color-background: var(--background);
   --color-background-secondary: var(--bg-secondary);
   --color-foreground: var(--foreground);
+  --font-frank-ruhl-libre: var(--font-frank-ruhl-libre);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --color-sidebar-ring: var(--sidebar-ring);
@@ -55,7 +56,7 @@
   --primary: #6b705c;
   --primary-foreground: #ffffff;
   --secondary: #c58c6d;
-  --secondary-foreground: #ffffff;
+  --secondary-foreground: #D1D6C4;
   --muted: #f7fafc;
   --muted-foreground: #4a5568;
   --accent: #956165;
@@ -119,7 +120,7 @@
     @apply border-border outline-ring/50;
   }
   html {
-    font-family: Inter, system-ui, sans-serif;
+    font-family: var(--font-frank-ruhl-libre), system-ui, sans-serif;
   }
   body {
     @apply bg-background text-foreground;
